@@ -1,0 +1,20 @@
+// ISEQ1: Test four-function unsigned arithmetic
+//tlc type: run
+// Test addition (boring)
+//tlc case: 0x00000003=0x00000001,0x00000002,1,0,0
+//tlc case: 0xffffffff=0xffff0000,0x0000ffff,1,0,0
+// Test addition for overflow
+//tlc case: 0x00000000=0xffffffff,0x00000001,1,0,0
+//tlc case: 0x00000001=0xffffffff,0x00000002,1,0,0
+// Test subtraction for overflow
+//tlc case: 0xffffffff=0x00000000,0x00000001,0,1,0
+//tlc case: 0xfffffffe=0x00000000,0x00000002,0,1,0
+// Test multiplication for overflow
+//tlc case: 0xfffffffe=0xffffffff,0x00000000,0,2,0
+//tlc case: 0xfffffffd=0xffffffff,0x00000000,0,3,0
+// Test division
+//tlc case: 0x00000001=0xffffffff,0xffffffff,0,0,1
+//tlc case: 0xffffffff=0xffffffff,0x00000001,0,0,1
+// (Note that by default only 10KB of header is scanned for //tlc comments!)
+unsigned a,b,c,d,e;
+c*(a+b) + d*(a-b) + e*(a/b);
