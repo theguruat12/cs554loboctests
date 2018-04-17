@@ -1,8 +1,16 @@
-// ISEQ1: Test addition
+// ISEQ1: Test test not equivalent
 //tlc type: run
-//tlc case:  4=1,3   case: -4=-1,-3 case: 98=99,-1  case: 0=0,0
-//tlc case:  2=-1,3  case: 0xffffffff=0xf0f0f0f0,0x0f0f0f0f  case: 2=0xffffffff,3
-//tlc case: -300=-100,-200 case: -300=-200,-100
-signed a, b;
-a+b;
+//tlc case:  f=32,32  
+//tlc case:  t=12,11  
+//tlc case:  t=1,11  
+//tlc case:  t=-1,4 
+//tlc case:  t=44,43
+//tlc case:  f=0,0
+//tlc case:  f=-894,-894
+//tlc case:  t=12,-12
+//tlc case:  f=-123,-123
+//tlc case:  f=11,0x0000000b
+
+signed a,b;
+a!=b;
 

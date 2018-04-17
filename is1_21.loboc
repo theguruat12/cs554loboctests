@@ -1,9 +1,9 @@
-// ISEQ3: Test AND operation
+// ISEQ1: Test addition with a negate operation surrounding
 //tlc type: run
-//tlc case:  t=t,t  
-//tlc case:  f=f,f  
-//tlc case:  f=t,f  
-//tlc case:  f=f,t  
-bool a,b;
-a && b;
+//tlc case:  -2=1,1  
+//tlc case:  -3=1,2  
+//tlc case:  2=-1,-1  
+//tlc case:  0=0,0  
+signed a,b;
+-(a+b);
 
