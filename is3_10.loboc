@@ -1,9 +1,9 @@
 // ISEQ3: Test OP operation 
 //tlc type: run
-//tlc case:  t=t,t  
-//tlc case:  t=f,t  
-//tlc case:  t=t,f  
-//tlc case:  f=f,f  
+//tlc case: t=t,t
+//tlc case: t=f,t
+//tlc case: t=t,f
+//tlc case: f=f,f
 bool a,b;
 a || b;
 

@@ -1,0 +1,13 @@
+// ISEQ1: Greater than comparison
+//tlc type: run
+//tlc case: f=0,1
+//tlc case: f=1,1
+//tlc case: t=1,0
+//tlc case: f=0,0
+//tlc case: f=-5,1
+//tlc case: f=-1,-1
+//tlc case: f=-1,0
+//tlc case: f=42,4000
+signed a, b;
+a > b;
+
