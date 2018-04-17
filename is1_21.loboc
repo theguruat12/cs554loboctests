@@ -1,0 +1,9 @@
+// ISEQ3: Test AND operation
+//tlc type: run
+//tlc case:  t=t,t  
+//tlc case:  f=f,f  
+//tlc case:  f=t,f  
+//tlc case:  f=f,t  
+bool a,b;
+a && b;
+
