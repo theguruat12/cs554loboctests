@@ -1,14 +1,13 @@
-// ISEQQQ3: Test logical operations
+// ISEQ1: Less than or equal to comparison
 //tlc type: run
-//tlc case:  t=t,t,t,t  
-//tlc case:  f=f,f,f,f  
-//tlc case:  f=t,f,f,f  
-//tlc case:  f=f,t,t,f 
-//tlc case:  f=f,t,f,f 
-//tlc case:  f=t,f,t,f 
-//tlc case:  f=f,f,t,f 
-//tlc case:  t=t,t,f,f
-
-bool a,b,c,d;
-(a && b) || (c && d);
+//tlc case: t=0,1
+//tlc case: t=1,1
+//tlc case: f=1,0
+//tlc case: t=0,0
+//tlc case: t=-5,1
+//tlc case: t=-1,-1
+//tlc case: t=-1,0
+//tlc case: t=42,4000
+signed a, b;
+a <= b;
 

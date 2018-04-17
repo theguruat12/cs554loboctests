@@ -1,9 +1,10 @@
-// ISEQ3: Test OP operation 
+// ISEQ1: Test negate operation
 //tlc type: run
-//tlc case:  t=t,t  
-//tlc case:  t=f,t  
-//tlc case:  t=t,f  
-//tlc case:  f=f,f  
-bool a,b;
-a || b;
-
+//tlc case: 1=-1
+//tlc case: -1=1
+//tlc case: -1000=1000
+//tlc case: 2=-2
+//tlc case: -2=2
+//tlc case: 0xffffffff=1
+signed a;
+-a;

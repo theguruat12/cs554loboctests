@@ -1,11 +1,7 @@
-// ISEQ333: Test equavalance and assigning of new bool then compares bool against bool
+// ISEQ1: Nested return values
 //tlc type: run
-//tlc case:  t=32,32,t  
-//tlc case:  t=12,11,f  
-//tlc case:  f=12,11,t  
-//tlc case:  f=55,55,f  
-//tlc case:  t=12,12,t  
-signed a,b;
-bool c;
-a==b==c;
+//tlc case: 2=3,1,2
+//tlc case: 43=42,0,43
+signed a;
+{bool b; signed a; {b, 1;} 1;2;a;}
 
