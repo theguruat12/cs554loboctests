@@ -38,22 +38,22 @@ unsigned upper;
   while (i*i < upper)
   {
     if (isPrime[i])
-	{
-	  // i is prime.  Mark off multiples of i from our table, as these numbers
-	  // have i as a prime factor.
-	  
-	  unsigned j;
-	  
-	  j = 2;
-	  
-	  while (j*i < upper)
-	  {
-	    isPrime[j*i] = 0;
-		j++;
-	  }
-	}
-	
-	i++;
+    {
+      // i is prime.  Mark off multiples of i from our table, as these numbers
+      // have i as a prime factor.
+  
+      unsigned j;
+  
+      j = 2;
+  
+      while (j*i < upper)
+      {
+        isPrime[j*i] = 0;
+        j++;
+      }
+    }
+
+    i++;
   }
 
   // When we've finished, count the number of primes in our table.
