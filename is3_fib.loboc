@@ -1,4 +1,4 @@
-// ISEQ4: Calculates the nth fibinacci number
+// ISEQ3: Calculates the nth fibonacci number
 //tlc type: run
 //tlc case: 1=0
 //tlc case: 1=1
