@@ -1,0 +1,13 @@
+// ISEQ2 Constant array reference
+//tlc type: run
+//tlc case: t=0,t,f,t,f,f,t,f,t
+//tlc case: f=1,t,f,t,f,f,t,f,t
+//tlc case: t=2,t,f,t,f,f,t,f,t
+//tlc case: f=3,t,f,t,f,f,t,f,t
+//tlc case: f=4,t,f,t,f,f,t,f,t
+//tlc case: t=5,t,f,t,f,f,t,f,t
+//tlc case: f=6,t,f,t,f,f,t,f,t
+//tlc case: t=7,t,f,t,f,f,t,f,t
+signed i;
+bool[8] v;
+v[i];
